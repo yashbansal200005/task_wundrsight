@@ -14,7 +14,7 @@ const app = express();
 // --- START: MODIFIED CORS CONFIGURATION ---
 // This list holds all the web addresses that are allowed to make requests to this backend.
 const allowedOrigins = [
-    'http://localhost:5173', // Your Vite frontend's development URL
+    'https://task-wundrsight-git-main-yashbansal200005-gmailcoms-projects.vercel.app/', // Your Vite frontend's development URL
     // When you deploy your frontend to Vercel/Netlify, add its URL here.
     // e.g., 'https://my-booking-app.vercel.app'
 ];
