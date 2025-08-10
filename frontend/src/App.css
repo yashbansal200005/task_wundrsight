@@ -1,0 +1,171 @@
+/* Basic Reset & Font */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+nav a, nav button {
+  text-decoration: none;
+  color: #007bff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover, nav button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Forms */
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Dashboards */
+.dashboard-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.error {
+  color: #d9534f;
+  background-color: #f2dede;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.message {
+  color: #5cb85c;
+  background-color: #dff0d8;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+
+/* Slot List */
+.slot-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.slot-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    width: calc(33.333% - 1rem);
+}
+
+.slot-item button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+/* Bookings List/Table */
+.booking-item {
+    list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Loader */
+.loader {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
